@@ -1,0 +1,80 @@
+.navbar__desktop {
+  background-color: #0a0a0a;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  flex: 0.8;
+}
+
+.MuiSvgIcon-root {
+  color: #cfcfcf;
+  cursor: pointer;
+}
+
+.MuiSvgIcon-root:hover {
+  color: white;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  flex: 0.52;
+  justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.navbar__menu > p {
+  color: #cfcfcf;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.navbar__menu > p:hover {
+  color: white;
+}
+
+.navbar__icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbarIcons__search {
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 990px) {
+  .navbar__desktop {
+    flex: 1;
+  }
+  .navbar__menu {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar__desktop {
+    display: none;
+  }
+}
+
+.navbarMob__logo {
+  background-color: #0a0a0a;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  flex: 1;
+}
+
+@media screen and (min-width: 767px) {
+  .navbar__mob {
+    display: none;
+  }
+}
