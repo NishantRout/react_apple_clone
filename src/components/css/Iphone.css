@@ -1,0 +1,30 @@
+.iphone__ribbon {
+  background-color: #1e1e20;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iphone__ribbon > p {
+  color: white;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.iphoneRibbon__more {
+  color: #2997ff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .iphone__ribbon {
+    height: 70px;
+  }
+  .iphone__ribbon > p {
+    flex: 0.55;
+    text-align: center;
+  }
+}
