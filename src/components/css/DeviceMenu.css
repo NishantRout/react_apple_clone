@@ -1,6 +1,6 @@
 .deviceMenu {
   background-color: #111112;
-  height: 110px;
+  height: 115px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,10 +13,6 @@
   align-items: center;
   margin-left: 20px;
   margin-right: 20px;
-}
-
-.deviceMenu__item > img {
-  width: 37px;
 }
 
 .deviceMenu__label {
