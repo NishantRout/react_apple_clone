@@ -1,7 +1,12 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./css/Iphone12pro.css";
 
 function Iphone12pro() {
+  const history = useHistory();
+  const handleClick = () => {
+    history.push("/shop/iphone12pro");
+  };
   return (
     <div className="iphone12pro">
       <h2>iPhone 12 Pro</h2>
@@ -16,7 +21,9 @@ function Iphone12pro() {
         low light — and pushed even further on iPhone 12 Pro Max.
       </p>
 
-      <button className="iphone12pro__shopbutton">Shop</button>
+      <button onClick={handleClick} className="iphone12pro__shopbutton">
+        Shop
+      </button>
 
       <span>Learn more &#62;</span>
 

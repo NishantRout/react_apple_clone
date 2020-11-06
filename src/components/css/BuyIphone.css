@@ -1,0 +1,204 @@
+.buyIphone__header {
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: hsla(0, 0%, 100%, 0.65);
+  height: auto;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  top: 0;
+  position: sticky;
+  border-bottom: 1px solid lightgray;
+}
+
+.buyIphone__headerTitle {
+  color: #333333;
+  font-size: 21px;
+  line-height: 1.14286;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+  padding-right: 15%;
+}
+
+.buyIphone__headerPrice {
+  color: #333333;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  padding-left: 15%;
+}
+
+.buyIphone__ribbon {
+  text-align: center;
+  padding: 9px 0;
+  background-color: #f2f2f2;
+}
+
+.buyIphone__ribbon > p {
+  color: #333333;
+  font-size: 12px;
+  line-height: 1.33341;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.buyIphone__more {
+  color: #0070c9;
+}
+
+.buyIphone__more:hover {
+  text-decoration: underline;
+}
+
+.buyIphone__selection {
+  display: flex;
+  justify-content: center;
+}
+
+.buyIphone__selectionImage {
+  margin-right: 50px;
+}
+
+.buyIphone__selectionImage > img {
+  width: 470px;
+  height: 556px;
+}
+
+.buyIphone__selectionOptions {
+  margin-top: 70px;
+  margin-left: 40px;
+}
+
+.buyIphone__selectionOptions > p {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  color: #ef5602;
+}
+
+.buyIphone__selectionOptions > h1 {
+  color: #111111;
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 600;
+  letter-spacing: 0;
+  margin-bottom: 13px;
+}
+
+.buyIphone__spanBlue {
+  color: #0070c9 !important;
+  font-size: 14px !important;
+  line-height: 1.42861 !important;
+  font-weight: 400 !important;
+  letter-spacing: -0.016em !important;
+}
+
+.buyIphone__spanBlue:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.buyIphone__selectionOptions > span {
+  color: #111111;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+}
+
+.buyIphone__selectionOptions > h2 {
+  color: #111111;
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+
+.buyIphone__tradeIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buyIphone__tradeInBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  width: 100%;
+  min-width: 400px;
+  min-height: 4.88235rem;
+  padding: 0.70588rem 0.88235rem;
+  text-align: center;
+  border: 1px solid #d6d6d6;
+  box-sizing: border-box;
+  border-spacing: 0;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.buyIphone__tradeInBox:hover {
+  border-color: gray;
+}
+
+.buyIphone__tradeInYN {
+  color: #333333;
+  font-size: 17px;
+  line-height: 1.23543;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+}
+
+.buyIphone__tradeInPrice {
+  color: #333333;
+  font-size: 17px;
+  line-height: 1.23543;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+}
+
+.buyIphone__tradeInSelect {
+  border: 2px solid #0070c9;
+}
+.buyIphone__tradeInSelect:hover {
+  border: 2px solid #0070c9;
+}
+
+@media screen and (max-width: 767px) {
+  .buyIphone__selection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .buyIphone__selectionImage {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .buyIphone__selectionOptions {
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .buyIphone__headerTitle {
+    font-size: 17px;
+    line-height: 1.14286;
+    font-weight: 600;
+    letter-spacing: 0.011em;
+    padding-right: 15%;
+  }
+  .buyIphone__headerPrice {
+    font-size: 14px;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    padding-left: 5%;
+  }
+}

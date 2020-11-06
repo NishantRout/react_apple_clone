@@ -1,7 +1,12 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./css/Iphone12.css";
 
 function Iphone12() {
+  const history = useHistory();
+  const handleClick = () => {
+    history.push("/shop/iphone12");
+  };
   return (
     <div className="iphone12">
       <h2>iPhone 12</h2>
@@ -16,7 +21,9 @@ function Iphone12() {
         All in two perfect sizes — including the new iPhone 12 mini.
       </p>
 
-      <button className="iphone12__shopbutton">Shop</button>
+      <button onClick={handleClick} className="iphone12__shopbutton">
+        Shop
+      </button>
 
       <span>Learn more &#62;</span>
 
