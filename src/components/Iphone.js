@@ -2,6 +2,7 @@ import React from "react";
 import DeviceMenu from "./DeviceMenu";
 import "./css/Iphone.css";
 import Iphone12pro from "./Iphone12pro";
+import Iphone12 from "./Iphone12";
 
 function Iphone() {
   return (
@@ -17,6 +18,7 @@ function Iphone() {
       </div>
 
       <Iphone12pro />
+      <Iphone12 />
     </div>
   );
 }

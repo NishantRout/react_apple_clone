@@ -40,7 +40,7 @@ function Iphone12pro() {
           </span>
         </p>
         <p className="iphone12pro__preorderAvail">
-          <span>Available 13th November</span>
+          <span>Available 13 November</span>
         </p>
       </div>
     </div>

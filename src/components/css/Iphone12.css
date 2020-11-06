@@ -1,12 +1,12 @@
-.iphone12pro {
-  background-color: #000000;
+.iphone12 {
+  background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.iphone12pro > h2 {
-  color: #f5f5f7;
+.iphone12 > h2 {
+  color: #1d1d1f;
   font-size: 24px;
   line-height: 1.16667;
   font-weight: 600;
@@ -15,16 +15,16 @@
   margin-bottom: 10px;
 }
 
-.iphone12pro__tagline {
-  color: #f5f5f7;
+.iphone12__tagline {
+  color: #1d1d1f;
   font-size: 48px;
   line-height: 1.08349;
   font-weight: 600;
   letter-spacing: -0.003em;
 }
 
-.iphone12pro__description {
-  color: #f5f5f7;
+.iphone12__description {
+  color: #1d1d1f;
   font-size: 21px;
   line-height: 1.381;
   font-weight: 400;
@@ -34,7 +34,7 @@
   padding-bottom: 30px;
 }
 
-.iphone12pro__shopbutton {
+.iphone12__shopbutton {
   background-color: #0071e3;
   border: none;
   min-width: 28px;
@@ -50,13 +50,13 @@
   letter-spacing: -0.022em;
 }
 
-.iphone12pro__shopbutton:hover {
+.iphone12__shopbutton:hover {
   background-color: #2997ff;
   cursor: pointer;
 }
 
-.iphone12pro > span {
-  color: #2997ff;
+.iphone12 > span {
+  color: #06c;
   font-size: 21px;
   line-height: 1.381;
   font-weight: 400;
@@ -66,21 +66,12 @@
   padding-bottom: 50px;
 }
 
-.iphone12pro > span:hover {
+.iphone12 > span:hover {
   text-decoration: underline;
 }
 
-.iphone12pro__imageDesktop {
-  width: 1346px;
-  height: 530px;
-  background-size: 1346px 530px;
-  background-repeat: no-repeat;
-  position: relative;
-  left: 10%;
-}
-
-.iphone12pro__save {
-  color: #f5f5f7;
+.iphone12__save {
+  color: #1d1d1f;
   font-size: 40px;
   line-height: 1.1;
   font-weight: 600;
@@ -88,8 +79,8 @@
   padding-top: 80px;
 }
 
-.iphone12pro__preorderTitle {
-  color: #f5f5f7;
+.iphone12__preorderTitle {
+  color: #1d1d1f;
   font-size: 24px;
   line-height: 1.33341;
   font-weight: 600;
@@ -98,8 +89,8 @@
   text-align: center;
 }
 
-.iphone12pro__preorderDate {
-  color: #a1a1a6;
+.iphone12__preorderDate {
+  color: #86868b;
   font-size: 24px;
   line-height: 1.33341;
   font-weight: 400;
@@ -107,8 +98,8 @@
   text-align: center;
 }
 
-.iphone12pro__preorderAvail {
-  color: #a1a1a6;
+.iphone12__preorderAvail {
+  color: #86868b;
   font-size: 24px;
   line-height: 1.33341;
   font-weight: 400;
@@ -118,51 +109,56 @@
   margin-bottom: 100px;
 }
 
+.iphone12__imageDesktop {
+  width: 694px;
+  height: 647px;
+  background-size: 694px 647px;
+  background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 767px) {
-  .iphone12pro__imageDesktop {
-    display: none;
-  }
-  .iphone12pro__imageMob {
-    width: 263px;
-    height: 341px;
-    background-size: 263px 341px;
-    background-repeat: no-repeat;
-  }
-  .iphone12pro > h2 {
+  .iphone12 > h2 {
     margin-top: 50px;
     font-size: 19px;
     line-height: 1.21053;
     font-weight: 600;
     letter-spacing: 0.012em;
   }
-  .iphone12pro__tagline {
+  .iphone12__tagline {
     font-size: 40px;
     line-height: 1.1;
     font-weight: 600;
     letter-spacing: 0em;
   }
-  .iphone12pro__description {
+  .iphone12__description {
     font-size: 17px;
     line-height: 1.47059;
     font-weight: 400;
     letter-spacing: -0.022em;
   }
-  .iphone12pro > span {
+  .iphone12 > span {
     font-size: 17px;
     line-height: 1.47059;
     font-weight: 400;
     letter-spacing: -0.022em;
   }
-
-  .iphone12pro__save {
+  .iphone12__imageDesktop {
+    display: none;
+  }
+  .iphone12__imageMob {
+    width: 302px;
+    height: 282px;
+    background-size: 302px 282px;
+    background-repeat: no-repeat;
+  }
+  .iphone12__save {
     font-size: 28px;
     line-height: 1.14286;
     font-weight: 600;
     letter-spacing: 0.007em;
     padding-top: 50px;
   }
-
-  .iphone12pro__preorderTitle {
+  .iphone12__preorderTitle {
     font-size: 19px;
     line-height: 1.21053;
     font-weight: 600;
@@ -170,13 +166,13 @@
     margin-top: 25px;
     margin-bottom: 10px;
   }
-  .iphone12pro__preorderDate {
+  .iphone12__preorderDate {
     font-size: 19px;
     line-height: 1.21053;
     font-weight: 400;
     letter-spacing: 0.012em;
   }
-  .iphone12pro__preorderAvail {
+  .iphone12__preorderAvail {
     font-size: 19px;
     line-height: 1.21053;
     font-weight: 400;
@@ -187,7 +183,7 @@
 }
 
 @media screen and (min-width: 767px) {
-  .iphone12pro__imageMob {
+  .iphone12__imageMob {
     display: none;
   }
 }
