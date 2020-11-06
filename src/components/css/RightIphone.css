@@ -1,0 +1,118 @@
+.rightIphone {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightIphone > h2 {
+  color: #1d1d1f;
+  font-size: 48px;
+  line-height: 1.08349;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+.rightIphone > span {
+  color: #06c;
+  font-size: 24px;
+  line-height: 1.33341;
+  font-weight: 400;
+  letter-spacing: 0.009em;
+  margin-bottom: 50px;
+}
+
+.rightIphone > span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.rightIphone__cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightIphone__card {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.rightIphone__card > img {
+  height: 254px;
+  background-size: 197px 254px;
+  background-repeat: no-repeat;
+  margin-bottom: 27px;
+}
+
+.rightIphone__title {
+  color: #1d1d1f;
+  font-size: 24px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  margin-bottom: 5px;
+}
+
+.rightIphone__price {
+  color: #1d1d1f;
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 600;
+  letter-spacing: -0.016em;
+}
+
+.rightIphone__specs {
+  margin-left: -40px;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  color: #1d1d1f;
+}
+
+.rightIphone__specs > li {
+  margin-top: 20px;
+  max-width: 200px;
+}
+
+.rightIphone__shopbutton {
+  background-color: #0071e3;
+  border: none;
+  color: #f5f5f7;
+  font-size: 12px;
+  line-height: 1.33337;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  min-width: 23px;
+  padding-left: 11px;
+  padding-right: 11px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 12px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+.rightIphone__shopbutton:hover {
+  background-color: #2997ff;
+  cursor: pointer;
+}
+
+.rightIphone__learn {
+  color: #06c;
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  cursor: pointer;
+  padding-bottom: 120px;
+}
+
+.rightIphone__learn:hover {
+  text-decoration: underline;
+}

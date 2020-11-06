@@ -3,6 +3,7 @@ import DeviceMenu from "./DeviceMenu";
 import "./css/Iphone.css";
 import Iphone12pro from "./Iphone12pro";
 import Iphone12 from "./Iphone12";
+import RightIphone from "./RightIphone";
 
 function Iphone() {
   return (
@@ -19,6 +20,7 @@ function Iphone() {
 
       <Iphone12pro />
       <Iphone12 />
+      <RightIphone />
     </div>
   );
 }
