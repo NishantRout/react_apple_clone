@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./css/RightIphone.css";
 
 function RightIphone() {
-  const [iphones, setIphones] = useState([
+  const [iphonesNew, setIphonesNew] = useState([
     {
       title: "iPhone 12 pro",
       image:
@@ -31,6 +31,9 @@ function RightIphone() {
       lidar: "N/A",
       magsafe: "Compatible with MagSafe accessories",
     },
+  ]);
+
+  const [iphonesOld, setIphonesOld] = useState([
     {
       title: "iPhone 11",
       image:
@@ -60,62 +63,121 @@ function RightIphone() {
       magsafe: "N/A",
     },
   ]);
+
   return (
     <div className="rightIphone">
       <h2>Which iPhone is right for you?</h2>
       <span>Compare all iPhone models &#62;</span>
       <div className="rightIphone__cards">
-        {iphones.map(
-          ({
-            image,
-            title,
-            price,
-            screenSize,
-            screenType,
-            connectivity,
-            processor,
-            camera,
-            lens,
-            lidar,
-            magsafe,
-          }) => (
-            <div className="rightIphone__card">
-              <img src={image} alt="" />
-              <h3 className="rightIphone__title">{title}</h3>
-              <p className="rightIphone__price">From ₹{price}</p>
-              <ul className="rightIphone__specs">
-                <li>
-                  {screenSize} <br /> {screenType}
-                </li>
-                <li>{connectivity}</li>
-                <li>{processor}</li>
-                <li>
-                  {camera} <br /> {lens}
-                </li>
-                {lidar == "N/A" ? (
+        <div className="rightIphone__cardsNew">
+          {iphonesNew.map(
+            ({
+              image,
+              title,
+              price,
+              screenSize,
+              screenType,
+              connectivity,
+              processor,
+              camera,
+              lens,
+              lidar,
+              magsafe,
+            }) => (
+              <div className="rightIphone__card">
+                <img src={image} alt="" />
+                <h3 className="rightIphone__title">{title}</h3>
+                <p className="rightIphone__price">From ₹{price}</p>
+                <ul className="rightIphone__specs">
                   <li>
-                    &mdash;
-                    <br />
-                    <br />
+                    {screenSize} <br /> {screenType}
                   </li>
-                ) : (
-                  <li>{lidar}</li>
-                )}
-                {magsafe == "N/A" ? (
+                  <li>{connectivity}</li>
+                  <li>{processor}</li>
                   <li>
-                    &mdash;
-                    <br />
-                    <br />
+                    {camera} <br /> {lens}
                   </li>
-                ) : (
-                  <li style={{ maxWidth: "150px" }}>{magsafe}</li>
-                )}
-              </ul>
-              <button className="rightIphone__shopbutton">Shop</button>
-              <p className="rightIphone__learn">Learn more &#62;</p>
-            </div>
-          )
-        )}
+                  {lidar == "N/A" ? (
+                    <li>
+                      &mdash;
+                      <br />
+                      <br />
+                      {title == "iPhone 12" && <br class="mob" />}
+                    </li>
+                  ) : (
+                    <li>{lidar}</li>
+                  )}
+                  {magsafe == "N/A" ? (
+                    <li style={{ maxWidth: "150px" }}>
+                      &mdash;
+                      <br />
+                      <br />
+                    </li>
+                  ) : (
+                    <li style={{ maxWidth: "150px" }}>{magsafe}</li>
+                  )}
+                </ul>
+                <button className="rightIphone__shopbutton">Shop</button>
+                <p className="rightIphone__learn">Learn more &#62;</p>
+              </div>
+            )
+          )}
+        </div>
+        <div className="rightIphone__cardsOld">
+          {iphonesOld.map(
+            ({
+              image,
+              title,
+              price,
+              screenSize,
+              screenType,
+              connectivity,
+              processor,
+              camera,
+              lens,
+              lidar,
+              magsafe,
+            }) => (
+              <div className="rightIphone__card">
+                <img src={image} alt="" />
+                <h3 className="rightIphone__title">{title}</h3>
+                <p className="rightIphone__price">From ₹{price}</p>
+                <ul className="rightIphone__specs">
+                  <li>
+                    {screenSize} <br /> {screenType}
+                    {title == "iPhone SE" && <br class="mob" />}
+                    {title == "iPhone SE" && <br class="mob" />}
+                  </li>
+                  <li>{connectivity}</li>
+                  <li>{processor}</li>
+                  <li>
+                    {camera} <br /> {lens}
+                  </li>
+                  {lidar == "N/A" ? (
+                    <li>
+                      &mdash;
+                      <br />
+                      <br />
+                    </li>
+                  ) : (
+                    <li>{lidar}</li>
+                  )}
+                  {magsafe == "N/A" ? (
+                    <li>
+                      &mdash;
+                      <br />
+                      <br />
+                    </li>
+                  ) : (
+                    <li style={{ maxWidth: "150px" }}>{magsafe}</li>
+                  )}
+                </ul>
+                <button className="rightIphone__shopbutton">Shop</button>
+                <p className="rightIphone__learn">Learn more &#62;</p>
+              </div>
+            )
+          )}
+        </div>
       </div>
     </div>
   );
