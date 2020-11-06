@@ -44,6 +44,9 @@
     justify-content: space-between;
     overflow-y: scroll;
   }
+  .deviceMenu::-webkit-scrollbar {
+    display: none;
+  }
   .deviceMenu__item {
     margin-left: 30px;
     margin-right: 30px;

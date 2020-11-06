@@ -100,7 +100,7 @@ function DeviceMenu() {
           {newDevice ? (
             <span className="deviceMenu__new">New</span>
           ) : (
-            <p>hello</p>
+            <p style={{ color: "#111112", fontSize: "10px" }}>None</p>
           )}
         </div>
       ))}
