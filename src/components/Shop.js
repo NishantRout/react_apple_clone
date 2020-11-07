@@ -7,7 +7,7 @@ function Shop() {
 
   return (
     <div className="shop">
-      {(Id == "iphone12pro" || Id == "iphone12") && <BuyIphone Id={Id} />}
+      {(Id === "iphone12pro" || Id === "iphone12") && <BuyIphone Id={Id} />}
     </div>
   );
 }
