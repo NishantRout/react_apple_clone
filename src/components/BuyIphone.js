@@ -1,10 +1,11 @@
 import { FavoriteBorder } from "@material-ui/icons";
 import React, { useEffect, useState } from "react";
 import "./css/BuyIphone.css";
+import delivery from "./image/delivery.png";
 
 function BuyIphone({ Id }) {
   const [tradeIn, setTradeIn] = useState("");
-  const [model, setModel] = useState("");
+  const [model, setModel] = useState("iPhone 12 Pro");
   const [finish, setFinish] = useState("");
   const [capacity, setCapacity] = useState("");
   const [image, setImage] = useState(
@@ -65,15 +66,36 @@ function BuyIphone({ Id }) {
 
   console.log(tradeIn);
   console.log(model);
+
+  const totalPrice = () => {
+    if (model === "iPhone 12 Pro") {
+      if (capacity === "128") {
+        return "From ₹14,111/mo.** or ₹1,19,900";
+      } else if (capacity === "256") {
+        return "From ₹15,288/mo.** or ₹1,29,900";
+      } else if (capacity === "512") {
+        return "From ₹17,642/mo.** or ₹1,49,900";
+      } else {
+        return "From ₹14,111/mo. with EMI,** or ₹1,19,900";
+      }
+    } else {
+      if (capacity === "128") {
+        return "From ₹15,288/mo.** or ₹1,29,900";
+      } else if (capacity === "256") {
+        return "From ₹16,465/mo.** or ₹1,39,900";
+      } else if (capacity === "512") {
+        return "From ₹18,819/mo.** or ₹1,59,900";
+      } else {
+        return "From ₹15,288/mo. with EMI,** or ₹1,29,900";
+      }
+    }
+  };
+
   return (
     <div className="buyIphone">
       <div className="buyIphone__header">
         <span className="buyIphone__headerTitle">iPhone 12 Pro</span>
-        <span className="buyIphone__headerPrice">
-          {model === "iPhone 12 Pro"
-            ? "From ₹14,111/mo. with EMI,** or ₹1,19,900"
-            : "From ₹15,288/mo. with EMI,** or ₹1,29,900"}
-        </span>
+        <span className="buyIphone__headerPrice">{totalPrice()}</span>
       </div>
       <div className="buyIphone__ribbon">
         <p>
@@ -84,10 +106,19 @@ function BuyIphone({ Id }) {
       <div className="buyIphone__selection">
         <div className="buyIphone__selectionImage">
           <img src={image} alt="" />
+          <div className="buyIphone__selectionDelivery">
+            <img src={delivery} alt="" />
+            <p>Free contactless delivery</p>
+            <div className="buyIphone__selectionHelp">
+              <p>
+                Need some help? <span>Chat with an iPhone specialist</span>
+              </p>
+            </div>
+          </div>
         </div>
         <div className="buyIphone__selectionOptions">
           <p>New</p>
-          <h1>Shop iPhone 12 Pro</h1>
+          <h1>Buy iPhone 12 Pro</h1>
           <span>Get up to ₹34,000 off with Apple trade-in*</span>
 
           {/* Trade-in section start */}
@@ -278,9 +309,15 @@ function BuyIphone({ Id }) {
                 <span className="buyIphone__capacity">
                   128<small>GB</small>
                 </span>
-                <span className="buyIphone__capacityPrice">
-                  From ₹15,288/mo.** or ₹1,29,900
-                </span>
+                {model === "iPhone 12 Pro" ? (
+                  <span className="buyIphone__capacityPrice">
+                    From ₹14,111/mo.** or ₹1,19,900
+                  </span>
+                ) : (
+                  <span className="buyIphone__capacityPrice">
+                    From ₹15,288/mo.** or ₹1,29,900
+                  </span>
+                )}
               </div>
               <div
                 onClick={() => setCapacity("512")}
@@ -291,9 +328,15 @@ function BuyIphone({ Id }) {
                 <span className="buyIphone__capacity">
                   512<small>GB</small>
                 </span>
-                <span className="buyIphone__capacityPrice">
-                  From ₹18,819/mo.** or ₹1,59,900
-                </span>
+                {model === "iPhone 12 Pro" ? (
+                  <span className="buyIphone__capacityPrice">
+                    From ₹17,642/mo.** or ₹1,49,900
+                  </span>
+                ) : (
+                  <span className="buyIphone__capacityPrice">
+                    From ₹18,819/mo.** or ₹1,59,900
+                  </span>
+                )}
               </div>
             </div>
             <div className="buyIphone__finishRight">
@@ -306,9 +349,15 @@ function BuyIphone({ Id }) {
                 <span className="buyIphone__capacity">
                   256<small>GB</small>
                 </span>
-                <span className="buyIphone__capacityPrice">
-                  From ₹16,465/mo.** or ₹1,39,900
-                </span>
+                {model === "iPhone 12 Pro" ? (
+                  <span className="buyIphone__capacityPrice">
+                    From ₹15,288/mo.** or ₹1,29,900
+                  </span>
+                ) : (
+                  <span className="buyIphone__capacityPrice">
+                    From ₹16,465/mo.** or ₹1,39,900
+                  </span>
+                )}
               </div>
               <div
                 style={{ borderColor: "white" }}

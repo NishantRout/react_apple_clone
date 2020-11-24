@@ -97,17 +97,17 @@ function RightIphone() {
                   <li>
                     {camera} <br /> {lens}
                   </li>
-                  {lidar == "N/A" ? (
+                  {lidar === "N/A" ? (
                     <li>
                       &mdash;
                       <br />
                       <br />
-                      {title == "iPhone 12" && <br class="mob" />}
+                      {title === "iPhone 12" && <br class="mob" />}
                     </li>
                   ) : (
                     <li>{lidar}</li>
                   )}
-                  {magsafe == "N/A" ? (
+                  {magsafe === "N/A" ? (
                     <li style={{ maxWidth: "150px" }}>
                       &mdash;
                       <br />
@@ -145,15 +145,15 @@ function RightIphone() {
                 <ul className="rightIphone__specs">
                   <li>
                     {screenSize} <br /> {screenType}
-                    {title == "iPhone SE" && <br class="mob" />}
-                    {title == "iPhone SE" && <br class="mob" />}
+                    {title === "iPhone SE" && <br class="mob" />}
+                    {title === "iPhone SE" && <br class="mob" />}
                   </li>
                   <li>{connectivity}</li>
                   <li>{processor}</li>
                   <li>
                     {camera} <br /> {lens}
                   </li>
-                  {lidar == "N/A" ? (
+                  {lidar === "N/A" ? (
                     <li>
                       &mdash;
                       <br />
@@ -162,7 +162,7 @@ function RightIphone() {
                   ) : (
                     <li>{lidar}</li>
                   )}
-                  {magsafe == "N/A" ? (
+                  {magsafe === "N/A" ? (
                     <li>
                       &mdash;
                       <br />
